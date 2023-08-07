@@ -1,0 +1,135 @@
+/* stuff */
+* {
+	box-sizing: border-box;
+}
+h1, h2, p, a, t, cat, strong, ul, ol, .segoe {
+	font-family: "Segoe UI";
+}
+body {
+	margin: 0;
+}
+p {
+	margin-block-end: 0.5em;
+	margin-block-start: 0;
+}
+
+/* basic stuff */
+t {
+	font-size: 3em;
+}
+h2 {
+	font-size: 1.4em;
+}
+code {
+	background-color: #e5e5e5;
+	border-radius: 3px;
+	padding: 3px;
+	transition: 0.6s;
+	cursor: default;
+}
+code:hover {
+	background-color: #d9d9d9;
+	transition: 0.6s;
+}
+
+/* main page stuff */
+a, a.dead, a.blue.blue {
+	color: #0000d0;
+	text-decoration: none;
+}
+a:not([p]) {
+	color: #8400d0;
+}
+a.dead {
+	color: #d00000;
+	cursor: default;
+}
+a:hover, a.blue.blue:hover {
+	text-decoration: underline;
+	color: #4747eb;
+}
+a:not([p]):hover {
+	color: #a83ee6;
+}
+a.dead:hover {
+	color: #eb4747;
+}
+a:active, a.dead:active, a:not([p]):active, a.blue.blue:active {
+	color: limegreen;
+}
+
+cat {
+	display: block;
+	margin: 50px 0 0.75em 0;
+	bottom: 0;
+	position: absolute;
+}
+
+/* boxes */
+.shadow {
+	box-shadow: 0 0 10px 2px black;
+}
+#top {
+	top: 0px;
+	width: 100%;
+	height: 104px;
+}
+.content {
+	border: solid 2px;
+	background-color: #FAFAFA;
+}
+#page {
+	margin: 100px;
+	width: 70%;
+	min-height: 50em;
+}
+#article {
+	top: 19em;
+	position: absolute;
+	width: inherit;
+	min-height: 45.5em;
+	padding: 0.75em;
+}
+t#title {
+	position: absolute;
+	transform: translateY(25px);
+}
+#links {
+	position: absolute;
+	right: 0px;
+	margin-top: 125px;
+	margin-bottom: 125px;
+	width: 200px;
+	height: 200px;
+	top: 179px;
+	padding: 20px;
+}
+t#linktext {
+	top: -75px;
+	position: absolute;
+}
+
+/* topbar */
+#logo {
+	height: 100%;
+	width: 150px;
+	border-right: solid 2px black;
+}
+#logo:hover {
+	filter: brightness(110%);
+}
+#logo:active {
+	filter: brightness(85%);
+}
+#searching {
+	position: absolute;
+	left: 25%;
+	top: 39px;
+}
+#search {
+	margin-right: 5px;
+	border: inset 2px lightgray;
+	border-radius: 5px;
+	outline: 0;
+	padding: 5px;
+}
